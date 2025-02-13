@@ -1,7 +1,7 @@
 import { Box, Button, Paper, TextField, Typography, useTheme } from '@mui/material';
 import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
-
+import logo from '../assets/echo-03.png'
 const Login = () => {
   const navigate = useNavigate()
   const theme = useTheme();
@@ -27,6 +27,26 @@ const Login = () => {
       }}
     >
       <Paper sx={{ p: 4, width: "100%", textAlign: "center" }} elevation={3}>
+        <Box
+                        component="div"
+                        sx={{
+                            display: "flex",
+                            flexDirection: { xs: "column", sm: "row" }, 
+                            alignItems: "center",
+                            justifyContent: "center",
+                            gap: { xs: 2, sm: 4 }, 
+                        }}
+                    >
+                        <img
+                            height="100px"
+                            src={logo}
+                            alt="Logo"
+                            style={{
+                                maxWidth: "100%",
+                                objectFit: "contain",
+                            }}
+                        />
+                    </Box>
         <Typography variant="h4" gutterBottom>
           Login
         </Typography>

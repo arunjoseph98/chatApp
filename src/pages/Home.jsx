@@ -11,33 +11,13 @@ const Home = () => {
                 minHeight: "100vh",
                 backgroundColor: "#101D25",
                 display: "flex",
-                flexDirection: "column", // Stacks elements on smaller screens
+                flexDirection: "column", 
                 justifyContent: "center",
                 alignItems: "center",
-                padding: { xs: 2, sm: 4 }, // Adds padding for small screens
+                padding: { xs: 2, sm: 4 }, 
             }}
         >
-            <Box
-                component="div"
-                sx={{
-                    display: "flex",
-                    flexDirection: { xs: "column", sm: "row" }, // Stack on mobile, row on larger screens
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: { xs: 2, sm: 4 }, // Adjust spacing
-                }}
-            >
-                <img
-                    height="100px"
-                    src={logo}
-                    alt="Logo"
-                    style={{
-                        maxWidth: "100%",
-                        objectFit: "contain",
-                    }}
-                />
-            </Box>
-
+            
             <Login />
         </Box>
 

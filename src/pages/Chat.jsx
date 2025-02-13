@@ -6,7 +6,7 @@ import ChatArea from "../components/ChatArea";
 import socketIOClient from "socket.io-client";
 import { useNavigate } from "react-router-dom";
 
-const SERVERURL = "http://localhost:5000"; // Update this if hosting elsewhere
+const SERVERURL = "https://chatapp-server-23u6.onrender.com"; // Update this if hosting elsewhere
 
 const Chat = () => {
   const navigate = useNavigate()
